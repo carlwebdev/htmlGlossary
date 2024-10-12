@@ -1,0 +1,78 @@
+/* 
+ * CDN - TYPOGRAPHY - ALSO ADD LABLES, UIINPUTS & PLACEGHODLERS, AND SUMBIMTY BUTOTN, AND TETARE AETC !!!
+ */
+
+
+
+/*
+ <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<!-- CHANGE TO ROBOTO -->
+*/
+
+
+
+/* 
+ * GOOGLE FONTS
+ */
+ @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i');
+
+ html, body {
+
+	/* font-size:1rem; */ /* browser default */
+	/* color:#000; */ /* browser default */
+   
+
+    /* font-family: sans-serif; */
+    font-family: 'Noto Sans', sans-serif;
+	/* font-family: sans-serif; */
+	
+	/* font-family: Arial, sans-serif;  */
+  	/* font-family: Georgia, sans-serif;  */
+  
+	/*  font-family: 'Open Sans', Arial, sans-serif;*/
+  
+ }
+
+
+
+/* 
+ * GOOGLE FONTS
+ */
+ /*
+ @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*/
+
+ html, body {
+	/* font-family: "Lobster", sans-serif; */
+	/*
+	font-weight: 400;
+	font-style: normal;
+	*/
+ }
+
+
+
+
+
+
+
+/* MAYBE MOVE TO RESTE FILE.. OR PART AT LEAST */
+ /* PRE-FORMATTING ============================= */
+a, a:hover, a:visited {
+	text-decoration:none;
+	/* color:#000; */ /* inherit ! */
+	color: inherit; /* inherit ! */
+	font-weight: bold; /* NOT !!! */
+	}
+	a:hover {
+		/* text-decoration:underline; */ /* HAVE THIS ONLY ISIDE HTML MODULE THINGEE */
+	}
+
+
+
+	/*
+
+		.HTML_EDITOR {}
+
+
+	*/

@@ -1,0 +1,188 @@
+/*
+ * BRANDING
+ */
+body {
+	/* border: 3px solid red; */
+}
+
+
+
+
+/* 
+ * CSS 
+ * Branding reset - use the site's qaccent color to personalize some features
+
+// this is all kinda like "re-braqding reset-.ish concept , nice "
+
+ */
+/* 
+ * STYLE IMPLEMENTATIONS 
+ *
+ * 1 - (text) selection
+ * 2 - caret (input) - chekc del historial css tricks...
+ * 3 - marker (li) - copy form moss
+ *
+4 - SCROL BARS - VERT & HORIZONATL, AROUND TABLES !! CON LO DE L ACLASE DE TABLE WRAPPER , W_TABLE, ... .TABLE ...
+ *
+ * 5 - accent-color - for checkboxes etc
+ *
+ * 6 - hr
+ * 7 - checkboxes & radio buttons
+ * 8 - details / summary
+ * 9 - dt, dl
+ *
+ */
+/*
+next thinsg to add:
+
+hr
+.. & now also checjkboxes & radio button s??? 
+
+& details / summary
+
+
+& dt, dl... just sth, a reminder of sorts.... for htmleditror or just ordinary basic css stylings for the templates
+
+*/
+
+
+
+
+
+
+
+
+/* 
+ *
+ * 1 - (TEXT) SELECTION 
+ *
+ */
+ @mixin text_selection {
+	background-color: var(--c-accent); /* TEST  */
+	color: var(--c-text-inv); /* SHOUDL BE TEXT INVERTED */ 
+  }
+	::-moz-selection { /* Code for Firefox */ 
+	  @include text_selection;
+	}
+	::selection {
+	  @include text_selection;
+	}
+  
+  
+  /* 
+   *
+   * 2 - CARET (input)  
+   *
+   */
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/caret-color */
+  /* caret-color: $c_accent; */
+  input, textarea {
+	/* caret-color: $c_accent; */ /* does it apply only to the line ????? */
+	caret-color: var(--c-accent); 
+  }
+  
+  
+  /* 
+   *
+   * 3 - marker (li)
+   *
+   */
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/::marker */
+  /* ..... https://www.w3schools.com/tags/tag_summary.asp */  
+  li::marker {
+	/* color: blue; // TEST  */
+	/* color: $c_accent; // TEST  */
+	color: var(--c-accent); /* TEST */
+	/* font-size: 1.2em; // ?? para el size???? */
+  }
+  
+  
+  
+  /*
+   * CSS accent-color Property
+   */
+  /* accen tcolor for checkboxes etc !! justest it !!! in styldehgudie page !!! */
+  /* https://www.w3schools.com/cssref/css4_pr_accent-color.php */
+  
+  input,
+  progress {
+	accent-color: var(--c-accent); /* nice, this is the color once activated, not before - and ni this site, cowow ctheer are 2 very darlk color wor box and content, so not reallyty visibel ... */
+	
+  }
+  
+  
+  
+  
+  /* 
+   * SCROLLBARS - VERT  & CHECK HORIZONATLM, AROUND TABLES !! CON LO DE L ACLASE DE TABLE WRAPPER , W_TABLE, ... .TABLE ...
+   */
+  
+  
+  ::-webkit-scrollbar { /* the bar itseld */
+	width: 1em; /* APPLIES TO VERTICAL SCROLLBAR - make it less massive ... */
+	height: 1em; /* APPLIES TO HORIZONTAL SCROLLBAR - test with table RWD - OK, BUYT SOME MARGIN TOP WOULD BE NICE...  */
+	/* test  */
+	/* background: $c_complementary; */
+	/*
+	background: $c_black; // 
+	// background: var(--c-black); // 
+	*/
+	/* background: var(--c-text); //  */
+	/* background: var(--c-text-inv); */
+	/* background: var(--c-bg); */
+	background: var(--c-bg-inv);
+	
+	/* background: var(--c-bg-alt);  */
+  
+  }
+	::-webkit-scrollbar-track { /* THE BACKGROUND OF THE SCROLLBAR */
+	  /* background: hsl(120 75% 50% / 1); */
+	  /* background: hsl(120 75% 50%); */
+	  /* background: $c_accent; */ /* chenag for a lighter verison of the acent color, so build it with variable sfirts  */
+	  /* background: $c_accent_light; */ /* chenag for a lighter verison of the acent color, so build it with variable sfirts  */
+	  /*
+	  background: var(--c-accent-lighter); // 
+	  background: blue; //
+	  */
+	  /* background: var(--c-text-alt); // ???? */ 
+	  /* background: var(--c-blue-light); */  /* ????  */
+	  /* background: orange; */
+
+	  background: var(--c-accent-light);
+	  
+	  border-radius: 100vw; /* THE TRICK */
+	  margin-block: 0.5em; /* SHORTHAND FOR TOP & BOTTOM */
+	}
+	  ::-webkit-scrollbar-thumb { /* THE MOVABLE SECTION OF THE SCROLLBAR */
+		/*
+		// background: hsl(120 100% 20% / 1);
+		// background: hsl(120 100% 20%);
+		// background: $c_accent_light;
+		// background: $c_accent;
+		*/
+		background: var(--c-accent); /* TODO bg-color !!! */
+		/*
+		// border: 0.25em solid hsl(120 75% 50% / 1);
+		// border: 0.25em solid hsl(120 75% 50%);
+		// border: 0.25em solid $c_accent_light; // TRICK, TO MAKE IT LOOK LIKE A PADDING FORM THE OUTSIDE INWARDS
+		// border: 0.25em solid var(--c-accent-lighter); // 
+		*/
+		/* border: 0.25em solid var(--c-blue-light); */
+		border: 0.25em solid var(--c-accent-dark);
+		/* border: 0.25em solid purple; */
+		border-radius: 100vw;
+	  }
+		::-webkit-scrollbar-thumb:hover {
+		  /*
+		  // background: hsl(120 100% 10% / 1);
+		  // background: $c_accent_dark;
+		  // background: red;
+  
+  
+		  // background: var(--c-text);
+		  // background: var(--c-bg-alt);
+		  */
+		  /* background: var(--c-blue-dark); */
+		  /* background: pink; */
+		  background: var(--c-accent-dark);
+		}

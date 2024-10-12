@@ -1,0 +1,52 @@
+@import url('partials/reset.css');
+@import url('partials/typography.css');
+@import url('partials/branding.css');
+@import url('partials/tags.css');
+
+
+
+
+html, body {
+    min-height: 100%; /* */
+    /* height: 100%; */
+    }
+  
+  :root {
+    /* */ 
+    color-scheme: light dark; 
+    --c-accent: #60f;
+    /*
+    background-color: white;
+    color: black;
+    */  
+  }
+    
+    
+  /* If user prefers a dark appearance */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      /*
+      background-color: black;
+      color: white;
+      */
+      /* */
+      --c-accent: #f06;
+      
+    }
+  }
+    
+  
+  
+  .wrapper {
+    max-width: 1240px;
+    
+    margin-inline: auto; 
+    
+    margin-block: 4em; 
+    padding-inline: 4em; 
+    
+    
+    /* DEMO */
+    max-width: 576px;
+    border: 2px solid var(--c-accent);
+  }  

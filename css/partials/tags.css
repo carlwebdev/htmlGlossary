@@ -1,0 +1,141 @@
+/* HTML TAGS */
+
+
+/*  
+https://www.w3schools.com/tags/ref_byfunc.asp
+*/
+  
+/* BRANDING */
+a {
+    color: var(--c-accent);
+
+    /*
+    &:hover {
+      text-decoration: none;
+    }  
+    */
+
+  } /* a */ 
+
+
+
+hr {
+    border-color: var(--c-accent);
+  }
+
+
+
+/* li marker ... */
+/* but firts, undo the reset */
+li {}
+
+ol, ul {
+	/* list-style: none; */
+    /*
+	margin: 0;
+	padding: 0;
+    */
+	/*
+    margin: initial;
+	padding: initial;    
+	*/
+    margin: revert; /* FINALLY :-) */
+	padding: revert; /* FINALLY :-) */      
+}
+    ol {list-style: disc;}
+    ul {list-style: number;}
+
+/*
+Initial / Unset / Revert / Inherit
+https://kjmonahan.dev/css-initial-vs-unset/#:~:text=Resets%20a%20CSS%20property%20to%20its%20inherited%20value%2C%20if%20it's,will%20still%20allow%20for%20inheritance.
+*/
+
+
+/* BRANDING */
+/*
+li::marker {
+    color: var(--c-accent);
+  }
+*/
+
+
+
+
+  
+kbd {
+    background-color: var(--c-accent);
+    padding-inline: 0.4em;
+    /*
+    padding-inline: 1em;
+    padding-block: 1em;
+
+    padding-block: 0.4em;  
+    */
+    border-radius: 0.4em;
+    padding-block: 0.2em;
+}
+
+
+
+
+
+
+address {
+    color: var(--c-accent);
+}
+  
+
+time {
+    color: var(--c-accent);
+}  
+
+
+
+
+
+
+
+abbr {
+    /*
+    text-decoration: underline dotted;
+    cursor: help;
+    border-bottom: 1px dotted var(--c-accent);
+    */
+}
+
+
+blockquote {}
+
+
+blockquote {
+    /*
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    */
+    /*
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    */
+    /* border-left: 10px solid var(--c-accent); */
+    border-left: 12px solid var(--c-accent);
+    /*
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;   
+    */
+    margin: 1.5em 1em; 
+    padding: 0.5em 1em;   
+  }
+  /*
+  blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+  blockquote p {
+    display: inline;
+  }
+  */
