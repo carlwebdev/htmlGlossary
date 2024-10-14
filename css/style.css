@@ -47,6 +47,7 @@ html, body {
     
     
     /* DEMO */
-    max-width: 576px;
+    /* max-width: 576px; */
+    max-width: 1024px;
     border: 2px solid var(--c-accent);
   }  

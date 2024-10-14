@@ -62,18 +62,6 @@ li::marker {
 
 
   
-kbd {
-    background-color: var(--c-accent);
-    padding-inline: 0.4em;
-    /*
-    padding-inline: 1em;
-    padding-block: 1em;
-
-    padding-block: 0.4em;  
-    */
-    border-radius: 0.4em;
-    padding-block: 0.2em;
-}
 
 
 
@@ -91,6 +79,10 @@ time {
 
 
 
+/* 
+ * HTML Tags - text-related 
+ */
+
 abbr {
     /*
     text-decoration: underline dotted;
@@ -98,6 +90,31 @@ abbr {
     border-bottom: 1px dotted var(--c-accent);
     */
 }
+
+
+/*  
+ * HTML Tags - text-related
+ */
+
+ abbr {
+  /*
+  // text-decoration: dotted; // DEFAULT - only accepts dotted or underline
+  
+  // GOAL- CHANGE COLOR OF DOTTED LINE ...
+  // color: $c_accent;
+  // text-decoration: underline;
+  // text-decoration: dashed;
+  */
+  /* text-decoration-color: $c_accent; */
+  text-decoration-style: dashed; /* TEST IN LONG-HAND = OK --> DASHED IS BETTER THAN DOTTED */
+} 
+cite {
+  /* font-style: italic; */ /* DEFAULT  */
+  /*
+  color: $c_accent;
+  text-decoration: underline;
+  */
+} 
 
 
 
@@ -139,3 +156,43 @@ blockquote {
     display: inline;
   }
   */
+
+
+
+  /*  
+ * HTML Tags - code-related
+ */
+
+ /* this could be as in reset, or barnding reset, ec , simple, above this layer anyways ...  */
+
+ kbd {
+  /*
+   // DEFAULT
+   // font-family: monospace; // DEFAULT
+   background-color: #ccc;
+   border: 1px solid #999;
+   // padding: 6px;
+   padding: 2px;
+ 
+   display: inline-block;
+   // min-width: 2em;
+   // min-width: 1.4em;
+   min-width: 1.6em;
+   text-align: center;
+   */
+ } 
+
+
+
+ kbd {
+  background-color: var(--c-accent);
+  padding-inline: 0.4em;
+  /*
+  padding-inline: 1em;
+  padding-block: 1em;
+
+  padding-block: 0.4em;  
+  */
+  border-radius: 0.4em;
+  padding-block: 0.2em;
+}
