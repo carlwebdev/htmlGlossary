@@ -7,7 +7,7 @@ https://www.w3schools.com/tags/ref_byfunc.asp
   
 /* BRANDING */
 a {
-    color: var(--c-accent);
+    color: var(--c-accent) !important;
 
     /*
     &:hover {
@@ -79,24 +79,17 @@ time {
 
 
 
-/* 
- * HTML Tags - text-related 
- */
-
-abbr {
-    /*
-    text-decoration: underline dotted;
-    cursor: help;
-    border-bottom: 1px dotted var(--c-accent);
-    */
-}
-
-
 /*  
  * HTML Tags - text-related
  */
 
  abbr {
+  color: var(--c-accent);
+    /*
+    text-decoration: underline dotted;
+    cursor: help;
+    border-bottom: 1px dotted var(--c-accent);
+    */  
   /*
   // text-decoration: dotted; // DEFAULT - only accepts dotted or underline
   
@@ -109,6 +102,7 @@ abbr {
   text-decoration-style: dashed; /* TEST IN LONG-HAND = OK --> DASHED IS BETTER THAN DOTTED */
 } 
 cite {
+  color: var(--c-accent);
   /* font-style: italic; */ /* DEFAULT  */
   /*
   color: $c_accent;
@@ -117,9 +111,15 @@ cite {
 } 
 
 
+q, s {
+  color: var(--c-accent);
 
-
-
+} 
+/*
+sub, sup {
+  color: var(--c-accent);
+} 
+*/
 
 blockquote {}
 
@@ -195,4 +195,313 @@ blockquote {
   */
   border-radius: 0.4em;
   padding-block: 0.2em;
+}
+
+
+
+
+
+
+
+/*  
+ * HTML Tags - code-related
+ */
+
+
+
+ 
+/*  
+ * HTML Tags - media-related - add thigs to reste fie 
+ */
+
+ img, iframe {
+  /*
+  max-width: 100%;
+  height: auto;
+  display: block;
+  width: 100%;  
+  */
+  border: 3px solid var(--c-accent); 
+ }
+
+ img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+ }
+
+
+
+
+ video, audio,
+ iframe, canvas {
+  display:block;
+  width: 100%; /* This will make the tag responsive */
+  border: 3px solid var(--c-accent); // 
+ }
+
+
+
+ iframe {
+  /* aspect-ratio: 4 / 3; */
+  aspect-ratio: 16 / 9;
+  object-fit: cover; /* REQUIRED TO UNSQUISH VIDEOS EEMBEDS */
+  
+ } 
+
+
+
+
+
+
+     /* Responsive table container */
+     /*
+     div {
+      overflow-x: auto;
+    }
+    */
+    /* Table styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 18px;
+      text-align: left;
+    }
+
+    /* Table header styling */
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+    }
+
+    /* Table header background color */
+    th {
+      background-color: var(--c-accent);
+    }
+
+    /* Table row hover effect */
+    tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Alternate row background color */
+    
+    tbody tr:nth-child(odd) {
+      background-color: #333333; /* Dark Gray */
+    }    
+
+    tbody tr:nth-child(even) {
+      background-color: #36454F; /* Charcoal */
+    }
+
+
+
+
+/* Form container styling */
+form {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #333333; /* Dark Gray */
+}
+
+/* Form label styling */
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Form input, textarea, and button styling */
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="search"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Form button styling */
+form button[type="submit"] {
+  background-color: var(--c-accent);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: #333333; /* Dark Gray */
+}    
+
+
+/* Flex container for search form */
+form.search-form {
+  display: flex;
+  align-items: center;
+}
+
+form.search-form input[type="search"] {
+  flex: 1;
+  margin-right: 10px;
+
+  margin-bottom: 0;
+}
+
+
+
+
+/* Popover styling */
+.popover {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popover .popover-content {
+  display: none;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #333333; /* Dark Gray */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.popover:hover .popover-content {
+  display: block;
+}
+
+
+
+
+details {
+  border: var(--s-border);
+  background-color: #333333; /* Dark Gray */
+  padding: 1em;
+  border-radius: 5px;
+  margin-bottom: 0.5em; /* */
+}
+details details{
+  background-color: #36454F; /* Charcoal */
+}
+
+
+
+/* Summary styling */
+/*
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+summary .icon {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+*/
+
+summary::marker { /* Unfortunately, the ::marker pseudo-element is not directly manipulable with flexbox or absolute positioning. However, you can hide the native marker and use a custom marker that you can position as needed. */
+  color: var(--c-accent);
+}
+
+
+/* Rotate icon when details are open */
+/*
+details[open] summary .icon {
+  transform: rotate(90deg);
+}
+*/
+
+
+/* Hide the native marker */
+summary::marker {
+  content: '';
+}
+
+/* Custom summary styling */
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  padding-right: 20px; /* Adjust padding to make space for the custom marker */
+}
+
+/* Custom marker */
+summary::after {
+  content: '▶'; /* Custom marker content */
+  position: absolute;
+  right: 0;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate custom marker when details are open */
+details[open] summary::after {
+  transform: rotate(90deg);
+}
+
+
+
+.anchor {
+  anchor-name: --my-anchor;
+  /* border: var(--s-border); */
+  display: inline-block;
+  border: 3px solid var(--c-accent);
+}
+.target {
+  position: absolute;
+  position-anchor: --my-anchor;
+
+  position-area: top right;
+}
+
+
+
+
+/* Dialog styling */
+dialog {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog h4 {
+  margin-top: 0;
+}
+
+dialog button {
+  background-color: var(--c-accent);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+dialog button:hover {
+  background-color: #333333; /* Dark Gray */
 }

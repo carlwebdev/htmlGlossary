@@ -51,3 +51,10 @@ html, body {
     max-width: 1024px;
     border: 2px solid var(--c-accent);
   }  
+
+
+  :root {
+    /* CSS VARIABLES */ 
+    /* --demo-img : url('https://picsum.photos/1920'); */
+    --demo-img: 'https://picsum.photos/1920';
+  }
