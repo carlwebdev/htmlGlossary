@@ -363,29 +363,43 @@ form.search-form input[type="search"] {
   position: relative;
   display: inline-block;
   cursor: pointer;
-}
-
-.popover .popover-content {
-  display: none;
-  position: absolute;
-  bottom: 125%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 200px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #333333; /* Dark Gray */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-}
-
-.popover:hover .popover-content {
-  display: block;
-}
 
 
+  .popover-content {
+    display: none;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #333333; /* Dark Gray */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  &:hover .popover-content {
+    display: block;
+  }
+
+} /* popover */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Details container styling */
 details {
   border: var(--s-border);
   background-color: #333333; /* Dark Gray */
@@ -459,6 +473,15 @@ details[open] summary::after {
 
 
 
+
+
+
+
+
+
+
+/* anchoring position - - - aka tooltip com popover too ... pero diferent e- Anchor styling */
+
 .anchor {
   anchor-name: --my-anchor;
   /* border: var(--s-border); */
@@ -475,6 +498,8 @@ details[open] summary::after {
 
 
 
+
+
 /* Dialog styling */
 dialog {
   border: none;
@@ -483,25 +508,32 @@ dialog {
   padding: 20px;
   max-width: 400px;
   width: 100%;
-}
 
-dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
-}
+  &::backdrop {
+    /*
+    position: fixed;
+    inset: 0px;
+    background: rgba(0, 0, 0, 0.1);    
+    */
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+  
+  h4 {
+    margin-top: 0;
+  }
+  
+  button {
+    background-color: var(--c-accent);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 
-dialog h4 {
-  margin-top: 0;
-}
+    &:hover {
+      background-color: #333333; /* Dark Gray */
+    }
 
-dialog button {
-  background-color: var(--c-accent);
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+  } /* button */
 
-dialog button:hover {
-  background-color: #333333; /* Dark Gray */
-}
+} /* dialog */
