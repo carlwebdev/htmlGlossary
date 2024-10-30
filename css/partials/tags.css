@@ -21,6 +21,7 @@ a {
 
 hr {
     border-color: var(--c-accent);
+    margin-block-start: 1em;
   }
 
 
@@ -42,8 +43,8 @@ ol, ul {
     margin: revert; /* FINALLY :-) */
 	padding: revert; /* FINALLY :-) */      
 }
-    ol {list-style: disc;}
-    ul {list-style: number;}
+    ol {list-style: number;} /* VS INITIALIZE OR WHATEVR */
+    ul {list-style: disc;} /* VS INITIALIZE OR WHATEVR */
 
 /*
 Initial / Unset / Revert / Inherit
@@ -236,7 +237,7 @@ blockquote {
  iframe, canvas {
   display:block;
   width: 100%; /* This will make the tag responsive */
-  border: 3px solid var(--c-accent); // 
+  border: 3px solid var(--c-accent); 
  }
 
 
@@ -355,6 +356,8 @@ form.search-form input[type="search"] {
   margin-bottom: 0;
 }
 
+
+/* THERE IS A REAL POPVER !! https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_att_popover */
 
 
 
