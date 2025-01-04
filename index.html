@@ -49,14 +49,14 @@
 
     <hr>
 
-    <h3>Unordered list</h3>
+    <h3>Unordered list (ul></h3>
     <ul>
       <li>List Item</li>
       <li>List Item</li>
       <li>List Item</li>
     </ul>
 
-    <h3>Ordered list</h3>
+    <h3>Ordered list (ol)</h3>
     <ol>
       <li>List Item</li>
       <li>List Item</li>
@@ -65,7 +65,7 @@
     
     <hr>
 
-    <h3>Definitions</h3>
+    <h3>Definitions (dl, dt, dd)</h3>
     <dl>
       <dt>Coffee</dt>
       <dd>Black hot drink</dd>
@@ -74,8 +74,16 @@
     </dl>
 
 
+    <hr>
+
+    <h3>Anchor (a)</h3>
+
+    <a href="https://www.example.com" title="This is a link" target="_blank">This is a link</a>
+
 
     <hr>
+
+    <h3>Blockquote (blockquote)</h3>
 
     <blockquote>
       This is a blockquote.
@@ -83,29 +91,24 @@
 
     <hr>
 
-    <a href="https://www.example.com" title="This is a link" target="_blank">This is a link</a>
 
 
 
     <h2>Text Related</h2>
 
-    <h4>abbr</h4>
+    <h4>Abbreviation (abbr)</h4>
     <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
-  
     <hr>
   
-    <h4>cite</h4>
+    <h4>Citation (cite)</h4>
     <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
-
-  
     <hr>
   
-    <h4>q</h4>
+    <h4>Short quotation (q)</h4>
     <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q> We hope they succeed.</p>
-  
     <hr>
   
-    <h4>s</h4>
+    <h4>"Strike-out" (s)</h4>
     <p><s>Only 50 tickets left!</s> - SOLD OUT!</p>
   
 
@@ -171,36 +174,44 @@
     <h4>Examples:</h4>
     <p>Example of <code>&lt;img&gt;</code>:</p>
     <img src="https://picsum.photos/1920" alt="Example Image">
-    
+    <hr>
+
     <p>Example of <code>&lt;picture&gt;</code>:</p>
     <picture>
+      <!--
       <source srcset="image.webp" type="image/webp">
       <source srcset="image.jpg" type="image/jpeg">
+      -->
       <img src="https://picsum.photos/1920" alt="Example Image">
     </picture>
+    <hr>
+
     
+    <p>Example of <code>&lt;iframe&gt;</code>:</p>
+    <iframe src="https://www.example.com" width="" height=""></iframe>
+    <hr>
+
+    <p>Example of <code>&lt;iframe&gt;</code> (video):</p>
+    <iframe width="" height="" src="https://www.youtube.com/embed/7X8II6J-6mU?si=CmMOSuUj7NTByHXR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <hr>
+    
+
     <p>Example of <code>&lt;video&gt;</code>:</p>
     <video controls>
       <source src="movie.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    
+    <hr>
+
     <p>Example of <code>&lt;audio&gt;</code>:</p>
     <audio controls>
       <source src="audio.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
+    <hr>
     
-    <p>Example of <code>&lt;iframe&gt;</code>:</p>
-    <iframe src="https://www.example.com" width="" height=""></iframe>
-    
-    <iframe width="" height="" src="https://www.youtube.com/embed/7X8II6J-6mU?si=CmMOSuUj7NTByHXR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-    
-
     <p>Example of <code>&lt;canvas&gt;</code>:</p>
     <canvas id="myCanvas" width="200" height="100" style="border:1px solid red;"></canvas>
-    
     <hr>
     
     
@@ -375,23 +386,23 @@
   
     <hr>
 
+
+
+
     <h3>Anchor Example</h3>
     <p>Visit <a href="https://www.example.com" target="_blank">Example.com</a> for more information.</p>
 
     <!-- https://css-tricks.com/css-anchor-positioning-guide/ -->
 
-
     <h3>Anchor Positioning</h3>
     <div class="anchor">anchor</div>
     <div class="target">target</div>
-
-
-    <h3>Dialog (modal...) lightbox.. </h3>
-
-
     <hr>
 
-    <h3>Dialog Example</h3>
+
+  
+
+    <h3>Dialog Example (modal...) lightbox.. </h3>
     <button id="openDialog">Open Dialog</button>
     
     <dialog id="exampleDialog">
@@ -446,6 +457,58 @@
     </script>
     
     
+
+    <hr>
+    
+    
+
+    <h3>Popover - The popover Attribute</h3>
+    <p>Click the button and it will toggle between showing and hiding the popover element.</p>
+<!--
+    obs - guess that defayukt layout is ecenterd, so the popover will be centered as well.
+  -->
+    
+  
+    <h1 popover id="myheader">Hello</h1>
+    
+    <button popovertarget="myheader">Click me!</button>
+    
+
+
+    <script>
+      /*
+      // Get the button and popover element
+      const button = document.querySelector('button');
+      const popover = document.querySelector('[popover]');
+    
+      // Add event listener to the button
+      button.addEventListener('click', function() {
+        // Toggle the hidden attribute on the popover element
+        popover.toggleAttribute('hidden');
+      });
+      */
+      </script>
+
+
+
+      <style>
+        /* https://www.w3schools.com/cssref/tryit.php?filename=trycss_sel_popover-open */
+        :popover-open {
+          width: 150px;
+          height: 150px;
+          /*  position: absolute; */ 
+          inset: unset;
+          bottom: 25px;
+          left: 25px;
+          margin: 0;
+          color: maroon;
+          background-color: orange;
+          font-size: 25px;
+        }
+        </style>
+
+
+
 
     <hr>
     

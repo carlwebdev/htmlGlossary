@@ -38,6 +38,12 @@ html, body {
   
   
   .wrapper {
+    /* position: relative; */ /* PRO EL POPOVER PSEUDO ABSOLUTE */
+
+
+
+
+
     max-width: 1240px;
     
     margin-inline: auto; 
