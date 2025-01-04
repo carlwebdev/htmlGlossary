@@ -63,8 +63,58 @@ li::marker {
 
 
   
+button {
+
+    color: var(--c-accent);
+    background-color: var(--c-bg);
+    border: 3px solid var(--c-accent);
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+
+  
+  &:hover {
+    color: var(--c-bg);
+    background-color: var(--c-accent);
+  }
+  
+  &:active {
+    transform: scale(0.95);
+  }
+  
+  &:focus {
+    outline: 3px solid var(--c-accent);
+    outline-offset: 3px;
+  }
+  
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  &:disabled:hover {
+    color: var(--c-accent);
+    background-color: var(--c-bg);
+  }
+}
 
 
+
+
+
+
+menu {
+  list-style: none;
+  padding: unset;
+  display: flex;
+  gap: 1em;
+
+
+}
 
 
 
@@ -165,8 +215,8 @@ blockquote {
  */
 
  /* this could be as in reset, or barnding reset, ec , simple, above this layer anyways ...  */
-
  kbd {
+
   /*
    // DEFAULT
    // font-family: monospace; // DEFAULT
@@ -181,11 +231,8 @@ blockquote {
    min-width: 1.6em;
    text-align: center;
    */
- } 
-
-
-
- kbd {
+   
+   
   background-color: var(--c-accent);
   padding-inline: 0.4em;
   /*
@@ -251,6 +298,30 @@ blockquote {
 
 
 
+
+
+
+
+ figure {
+  /* RESET */
+  margin-block: unset; /* RESET */
+  margin-inline: unset; /* RESET */
+
+  /* 
+  display: block;
+  width: 100%;
+  */
+
+
+
+  figcaption {
+    color: var(--c-accent);
+    text-align: center;
+    margin-top: 1em;
+  }
+
+
+ } 
 
 
 
@@ -540,3 +611,12 @@ dialog {
   } /* button */
 
 } /* dialog */
+
+
+
+
+
+
+
+
+

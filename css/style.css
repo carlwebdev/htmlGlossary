@@ -6,11 +6,9 @@
 
 
 
-html, body {
-    min-height: 100%; /* */
-    /* height: 100%; */
-    }
-  
+
+
+
   :root {
     /* */ 
     color-scheme: light dark; 
@@ -21,6 +19,16 @@ html, body {
     */  
   }
     
+
+
+  :root {
+    /* CSS VARIABLES */ 
+    /* --demo-img : url('https://picsum.photos/1920'); */
+    --demo-img: 'https://picsum.photos/1920';
+  }
+  
+  
+
     
   /* If user prefers a dark appearance */
   @media (prefers-color-scheme: dark) {
@@ -35,32 +43,64 @@ html, body {
     }
   }
     
-  
+
+
+
+
+
+  html, body {
+    min-height: 100%; /* */
+    /* height: 100%; */
+    }
+
+
+
   
   .wrapper {
     /* position: relative; */ /* PRO EL POPOVER PSEUDO ABSOLUTE */
-
-
-
-
-
     max-width: 1240px;
-    
     margin-inline: auto; 
-    
     margin-block: 4em; 
     padding-inline: 4em; 
-    
     
     /* DEMO */
     /* max-width: 576px; */
     max-width: 1024px;
     border: 2px solid var(--c-accent);
+
+
+
+
+
+
+
+
   }  
 
 
-  :root {
-    /* CSS VARIABLES */ 
-    /* --demo-img : url('https://picsum.photos/1920'); */
-    --demo-img: 'https://picsum.photos/1920';
+
+
+
+
+  /* section */
+section {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+}
+
+
+
+
+  /* ARTICLE */
+  article {
+    /* 
+    margin-block: 2em;
+    padding-block: 2em;
+    outline: 1px solid var(--c-accent);
+    outline-offset: 1em;
+    */
+
+    margin-block: 4em;
   }
