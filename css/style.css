@@ -7,28 +7,21 @@
 
 
 
+:root {
+  /* */ 
+  color-scheme: light dark; 
+  --c-accent: #60f;
+  /*
+  background-color: white;
+  color: black;
+  */  
 
-
-  :root {
-    /* */ 
-    color-scheme: light dark; 
-    --c-accent: #60f;
-    /*
-    background-color: white;
-    color: black;
-    */  
-  }
+  /* CSS VARIABLES */ 
+  /* --demo-img : url('https://picsum.photos/1920'); */
+  --demo-img: 'https://picsum.photos/1920';
     
-
-
-  :root {
-    /* CSS VARIABLES */ 
-    /* --demo-img : url('https://picsum.photos/1920'); */
-    --demo-img: 'https://picsum.photos/1920';
-  }
+}
   
-  
-
     
   /* If user prefers a dark appearance */
   @media (prefers-color-scheme: dark) {
@@ -53,9 +46,6 @@
     /* height: 100%; */
     }
 
-
-
-  
   .wrapper {
     /* position: relative; */ /* PRO EL POPOVER PSEUDO ABSOLUTE */
     max-width: 1240px;
@@ -66,31 +56,49 @@
     /* DEMO */
     /* max-width: 576px; */
     max-width: 1024px;
-    border: 2px solid var(--c-accent);
-
-
-
-
-
-
-
-
+    /* border: 2px solid var(--c-accent); */
   }  
 
 
-
-
-
-
-  /* section */
+/* section */
 section {
+
+}
+.section_grid {
+
+
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); */
+  /**/
   grid-template-columns: repeat(2, 1fr);
+  
   gap: 2em;
+  row-gap: 4em;
+
+
+  article {
+    margin-block: 0;;
+  }
+
+  
 }
 
 
+
+
+@media screen and (max-width: 1024px) {
+
+  .wrapper {
+    margin-block: 0em; 
+    padding-inline: 2em; 
+    /* border: unset; */
+  }  
+  
+  section {
+    grid-template-columns: 1fr;
+  }
+
+} /* MEDIA-QUERY /
 
 
   /* ARTICLE */
@@ -103,4 +111,33 @@ section {
     */
 
     margin-block: 4em;
+  }
+
+  article h3 code {
+    font-size: 1.4em;
+    margin-right: 0.3em;
+  }  
+
+
+
+
+
+  nav {
+    display: flex;
+    gap: 1em;
+    margin-block: 2em;
+
+    a {
+      font-size: 2em;
+
+      color: white;
+
+
+
+      &:hover {
+        color: var(--c-accent);
+      }
+    }
+    
+    
   }

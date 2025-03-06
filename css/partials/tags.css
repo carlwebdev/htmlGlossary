@@ -620,3 +620,12 @@ dialog {
 
 
 
+marquee {
+
+  background-color: var(--c-accent);
+  padding-block: 1em;
+  font-size: 1.618em;
+  font-weight: bold;
+}
+
+
