@@ -119,6 +119,14 @@ menu {
 
 
 
+/* dl, dt, dd {
+  margin: 0;
+  padding: 0;
+} */
+
+
+
+
 address {
     color: var(--c-accent);
 }
