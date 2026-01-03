@@ -62,6 +62,27 @@
             margin-bottom: 10px;
         }
 
+        .category-header {
+            width: 100%;
+            margin: 30px 10px 10px 10px;
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        .category-header h2 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        .category-header p {
+            margin: 5px 0 0 0;
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+
         footer {
             text-align: center;
             padding: 20px 0;
@@ -79,52 +100,530 @@
 
     <div class="container">
         <section class="glossary">
-            <!-- HTML Tag 1 -->
-            <div class="glossary-item">
-                <h2>&lt;a&gt; - Anchor Tag</h2>
-                <p>The <strong>&lt;a&gt;</strong> tag defines a hyperlink, which is used to link from one page to another.</p>
-                <p><strong>Example:</strong> &lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</p>
+            
+            <!-- CATEGORY 1: BASIC DOCUMENT STRUCTURE -->
+            <div class="category-header">
+                <h2>1. Basic Document Structure</h2>
+                <p>Essential tags that form the foundation of every HTML document</p>
             </div>
 
-            <!-- HTML Tag 2 -->
+            <div class="glossary-item">
+                <h2>&lt;html&gt; - HTML Tag</h2>
+                <p>The <strong>&lt;html&gt;</strong> tag is the root element of an HTML document.</p>
+                <p><strong>Example:</strong> &lt;html lang="en"&gt;...&lt;/html&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;head&gt; - Head Tag</h2>
+                <p>The <strong>&lt;head&gt;</strong> tag contains metadata and links to resources.</p>
+                <p><strong>Example:</strong> &lt;head&gt;&lt;title&gt;Title&lt;/title&gt;&lt;/head&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;body&gt; - Body Tag</h2>
+                <p>The <strong>&lt;body&gt;</strong> tag defines the main content of an HTML document.</p>
+                <p><strong>Example:</strong> &lt;body&gt;Content here&lt;/body&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;title&gt; - Title Tag</h2>
+                <p>The <strong>&lt;title&gt;</strong> tag defines the title of the document (shown in browser tab).</p>
+                <p><strong>Example:</strong> &lt;title&gt;Page Title&lt;/title&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;meta&gt; - Meta Tag</h2>
+                <p>The <strong>&lt;meta&gt;</strong> tag provides metadata about the HTML document.</p>
+                <p><strong>Example:</strong> &lt;meta charset="UTF-8"&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;link&gt; - Link Tag</h2>
+                <p>The <strong>&lt;link&gt;</strong> tag defines a link to an external resource (like a stylesheet).</p>
+                <p><strong>Example:</strong> &lt;link rel="stylesheet" href="style.css"&gt;</p>
+            </div>
+
+            <!-- CATEGORY 2: TEXT CONTENT -->
+            <div class="category-header">
+                <h2>2. Text Content</h2>
+                <p>Basic tags for displaying text and creating document structure</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;h1&gt; - Heading Tag</h2>
+                <p>The <strong>&lt;h1&gt;</strong> tag defines a top-level heading on a webpage. Headings range from <strong>&lt;h1&gt;</strong> to <strong>&lt;h6&gt;</strong>.</p>
+                <p><strong>Example:</strong> &lt;h1&gt;This is a Heading&lt;/h1&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <h1 style="font-size: 1.5rem; margin: 5px 0;">This is a Heading</h1>
+            </div>
+
             <div class="glossary-item">
                 <h2>&lt;p&gt; - Paragraph Tag</h2>
                 <p>The <strong>&lt;p&gt;</strong> tag defines a paragraph of text.</p>
                 <p><strong>Example:</strong> &lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <p style="background: #f0f0f0; padding: 10px; border-left: 3px solid #007bff;">This is a paragraph.</p>
             </div>
 
-            <!-- HTML Tag 3 -->
+            <div class="glossary-item">
+                <h2>&lt;br&gt; - Line Break</h2>
+                <p>The <strong>&lt;br&gt;</strong> tag inserts a line break.</p>
+                <p><strong>Example:</strong> Line one&lt;br&gt;Line two</p>
+                <p><strong>Live Example:</strong></p>
+                <div style="background: #f0f0f0; padding: 10px; border-left: 3px solid #007bff;">Line one<br>Line two</div>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;hr&gt; - Horizontal Rule</h2>
+                <p>The <strong>&lt;hr&gt;</strong> tag creates a horizontal line (thematic break).</p>
+                <p><strong>Example:</strong> &lt;hr&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <div style="background: #f0f0f0; padding: 10px;"><hr></div>
+            </div>
+
+            <!-- CATEGORY 3: TEXT FORMATTING -->
+            <div class="category-header">
+                <h2>3. Text Formatting</h2>
+                <p>Tags for styling and emphasizing text content</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;strong&gt; - Strong Text</h2>
+                <p>The <strong>&lt;strong&gt;</strong> tag defines text with strong importance (typically bold).</p>
+                <p><strong>Example:</strong> &lt;strong&gt;Important text&lt;/strong&gt;</p>
+                <p><strong>Live Example:</strong> This is <strong>Important text</strong> in a sentence.</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;em&gt; - Emphasized Text</h2>
+                <p>The <strong>&lt;em&gt;</strong> tag defines emphasized text (typically italic).</p>
+                <p><strong>Example:</strong> &lt;em&gt;Emphasized text&lt;/em&gt;</p>
+                <p><strong>Live Example:</strong> This is <em>Emphasized text</em> in a sentence.</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;b&gt; - Bold Text</h2>
+                <p>The <strong>&lt;b&gt;</strong> tag makes text bold without adding extra importance.</p>
+                <p><strong>Example:</strong> &lt;b&gt;Bold text&lt;/b&gt;</p>
+                <p><strong>Live Example:</strong> This is <b>Bold text</b> in a sentence.</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;i&gt; - Italic Text</h2>
+                <p>The <strong>&lt;i&gt;</strong> tag makes text italic without adding emphasis.</p>
+                <p><strong>Example:</strong> &lt;i&gt;Italic text&lt;/i&gt;</p>
+                <p><strong>Live Example:</strong> This is <i>Italic text</i> in a sentence.</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;u&gt; - Underline Text</h2>
+                <p>The <strong>&lt;u&gt;</strong> tag underlines text.</p>
+                <p><strong>Example:</strong> &lt;u&gt;Underlined text&lt;/u&gt;</p>
+                <p><strong>Live Example:</strong> This is <u>Underlined text</u> in a sentence.</p>
+            </div>
+
+            <!-- CATEGORY 4: LINKS & IMAGES -->
+            <div class="category-header">
+                <h2>4. Links & Images</h2>
+                <p>Tags for creating hyperlinks and embedding images</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;a&gt; - Anchor Tag</h2>
+                <p>The <strong>&lt;a&gt;</strong> tag defines a hyperlink, which is used to link from one page to another.</p>
+                <p><strong>Example:</strong> &lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</p>
+                <p><strong>Live Example:</strong> <a href="https://example.com" target="_blank" style="color: #007bff;">Visit Example</a></p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;img&gt; - Image Tag</h2>
+                <p>The <strong>&lt;img&gt;</strong> tag is used to embed an image in a webpage.</p>
+                <p><strong>Example:</strong> &lt;img src="image.jpg" alt="Image description"&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='80'%3E%3Crect fill='%23007bff' width='100' height='80'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Arial'%3ESample%3C/text%3E%3C/svg%3E" alt="Sample image" style="border: 2px solid #ddd; border-radius: 4px;">
+            </div>
+
+            <!-- CATEGORY 5: LISTS -->
+            <div class="category-header">
+                <h2>5. Lists</h2>
+                <p>Tags for creating ordered and unordered lists</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;ul&gt; - Unordered List</h2>
+                <p>The <strong>&lt;ul&gt;</strong> tag defines an unordered (bulleted) list.</p>
+                <p><strong>Example:</strong> &lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;/ul&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <ul style="background: #f0f0f0; padding: 10px 10px 10px 30px; border-left: 3px solid #007bff;">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;ol&gt; - Ordered List</h2>
+                <p>The <strong>&lt;ol&gt;</strong> tag defines an ordered (numbered) list.</p>
+                <p><strong>Example:</strong> &lt;ol&gt;&lt;li&gt;First&lt;/li&gt;&lt;li&gt;Second&lt;/li&gt;&lt;/ol&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <ol style="background: #f0f0f0; padding: 10px 10px 10px 30px; border-left: 3px solid #007bff;">
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                </ol>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;li&gt; - List Item</h2>
+                <p>The <strong>&lt;li&gt;</strong> tag defines an item in a list (used with &lt;ul&gt; or &lt;ol&gt;).</p>
+                <p><strong>Example:</strong> &lt;li&gt;List item&lt;/li&gt;</p>
+            </div>
+
+            <!-- CATEGORY 6: CONTAINERS -->
+            <div class="category-header">
+                <h2>6. Containers</h2>
+                <p>Generic container tags for grouping and styling content</p>
+            </div>
+
             <div class="glossary-item">
                 <h2>&lt;div&gt; - Division Tag</h2>
                 <p>The <strong>&lt;div&gt;</strong> tag is a block-level container for content, typically used to group elements.</p>
                 <p><strong>Example:</strong> &lt;div&gt;Content here&lt;/div&gt;</p>
             </div>
 
-            <!-- HTML Tag 4 -->
             <div class="glossary-item">
-                <h2>&lt;img&gt; - Image Tag</h2>
-                <p>The <strong>&lt;img&gt;</strong> tag is used to embed an image in a webpage.</p>
-                <p><strong>Example:</strong> &lt;img src="image.jpg" alt="Image description"&gt;</p>
+                <h2>&lt;span&gt; - Inline Container</h2>
+                <p>The <strong>&lt;span&gt;</strong> tag is an inline container used to style or manipulate a specific part of text.</p>
+                <p><strong>Example:</strong> &lt;span style="color:red"&gt;Red text&lt;/span&gt;</p>
             </div>
 
-            <!-- HTML Tag 5 -->
-            <div class="glossary-item">
-                <h2>&lt;ul&gt; - Unordered List</h2>
-                <p>The <strong>&lt;ul&gt;</strong> tag defines an unordered (bulleted) list.</p>
-                <p><strong>Example:</strong>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </p>
+            <!-- CATEGORY 7: TABLES -->
+            <div class="category-header">
+                <h2>7. Tables</h2>
+                <p>Tags for creating and structuring data tables</p>
             </div>
 
-            <!-- HTML Tag 6 -->
             <div class="glossary-item">
-                <h2>&lt;h1&gt; - Heading Tag</h2>
-                <p>The <strong>&lt;h1&gt;</strong> tag defines a top-level heading on a webpage. Headings range from <strong>&lt;h1&gt;</strong> to <strong>&lt;h6&gt;</strong>.</p>
-                <p><strong>Example:</strong> &lt;h1&gt;This is a Heading&lt;/h1&gt;</p>
+                <h2>&lt;table&gt; - Table Tag</h2>
+                <p>The <strong>&lt;table&gt;</strong> tag defines a table for displaying data in rows and columns.</p>
+                <p><strong>Example:</strong> &lt;table&gt;&lt;tr&gt;&lt;td&gt;Data&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <table style="border-collapse: collapse; width: 100%; margin-top: 5px;">
+                    <tr style="background: #007bff; color: white;">
+                        <th style="border: 1px solid #ddd; padding: 8px;">Name</th>
+                        <th style="border: 1px solid #ddd; padding: 8px;">Age</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 8px;">John</td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">25</td>
+                    </tr>
+                    <tr style="background: #f0f0f0;">
+                        <td style="border: 1px solid #ddd; padding: 8px;">Jane</td>
+                        <td style="border: 1px solid #ddd; padding: 8px;">30</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;tr&gt; - Table Row</h2>
+                <p>The <strong>&lt;tr&gt;</strong> tag defines a row in a table.</p>
+                <p><strong>Example:</strong> &lt;tr&gt;&lt;td&gt;Cell 1&lt;/td&gt;&lt;td&gt;Cell 2&lt;/td&gt;&lt;/tr&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;td&gt; - Table Data Cell</h2>
+                <p>The <strong>&lt;td&gt;</strong> tag defines a standard data cell in a table.</p>
+                <p><strong>Example:</strong> &lt;td&gt;Table data&lt;/td&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;th&gt; - Table Header Cell</h2>
+                <p>The <strong>&lt;th&gt;</strong> tag defines a header cell in a table.</p>
+                <p><strong>Example:</strong> &lt;th&gt;Column Header&lt;/th&gt;</p>
+            </div>
+
+            <!-- CATEGORY 8: FORMS -->
+            <div class="category-header">
+                <h2>8. Forms</h2>
+                <p>Tags for creating interactive forms and user input elements</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;form&gt; - Form Tag</h2>
+                <p>The <strong>&lt;form&gt;</strong> tag defines an HTML form for user input.</p>
+                <p><strong>Example:</strong> &lt;form action="/submit"&gt;...&lt;/form&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;input&gt; - Input Field</h2>
+                <p>The <strong>&lt;input&gt;</strong> tag defines an input field where users can enter data.</p>
+                <p><strong>Example:</strong> &lt;input type="text" name="username"&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <input type="text" placeholder="Enter username" style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; width: 90%;">
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;button&gt; - Button Tag</h2>
+                <p>The <strong>&lt;button&gt;</strong> tag defines a clickable button.</p>
+                <p><strong>Example:</strong> &lt;button&gt;Click me&lt;/button&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <button style="background: #007bff; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer;">Click me</button>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;label&gt; - Label Tag</h2>
+                <p>The <strong>&lt;label&gt;</strong> tag defines a label for an input element.</p>
+                <p><strong>Example:</strong> &lt;label for="email"&gt;Email:&lt;/label&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;select&gt; - Dropdown List</h2>
+                <p>The <strong>&lt;select&gt;</strong> tag creates a dropdown list.</p>
+                <p><strong>Example:</strong> &lt;select&gt;&lt;option&gt;Option 1&lt;/option&gt;&lt;/select&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <select style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; width: 95%;">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;option&gt; - Dropdown Option</h2>
+                <p>The <strong>&lt;option&gt;</strong> tag defines an option in a dropdown list.</p>
+                <p><strong>Example:</strong> &lt;option value="1"&gt;Option 1&lt;/option&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;textarea&gt; - Text Area</h2>
+                <p>The <strong>&lt;textarea&gt;</strong> tag defines a multi-line text input control.</p>
+                <p><strong>Example:</strong> &lt;textarea rows="4" cols="50"&gt;&lt;/textarea&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <textarea rows="3" placeholder="Enter multiple lines of text..." style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; width: 90%; resize: vertical;"></textarea>
+            </div>
+
+            <!-- CATEGORY 9: SEMANTIC HTML5 -->
+            <div class="category-header">
+                <h2>9. Semantic HTML5</h2>
+                <p>Modern HTML5 tags that provide meaning to document structure</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;header&gt; - Header Section</h2>
+                <p>The <strong>&lt;header&gt;</strong> tag defines a header section for a document or section.</p>
+                <p><strong>Example:</strong> &lt;header&gt;&lt;h1&gt;Site Title&lt;/h1&gt;&lt;/header&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;footer&gt; - Footer Section</h2>
+                <p>The <strong>&lt;footer&gt;</strong> tag defines a footer section for a document or section.</p>
+                <p><strong>Example:</strong> &lt;footer&gt;&copy; 2026&lt;/footer&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;nav&gt; - Navigation Section</h2>
+                <p>The <strong>&lt;nav&gt;</strong> tag defines a section of navigation links.</p>
+                <p><strong>Example:</strong> &lt;nav&gt;&lt;a href="/home"&gt;Home&lt;/a&gt;&lt;/nav&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;main&gt; - Main Content</h2>
+                <p>The <strong>&lt;main&gt;</strong> tag specifies the main content of a document.</p>
+                <p><strong>Example:</strong> &lt;main&gt;Main content here&lt;/main&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;section&gt; - Section Tag</h2>
+                <p>The <strong>&lt;section&gt;</strong> tag defines a thematic grouping of content.</p>
+                <p><strong>Example:</strong> &lt;section&gt;&lt;h2&gt;About&lt;/h2&gt;...&lt;/section&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;article&gt; - Article Tag</h2>
+                <p>The <strong>&lt;article&gt;</strong> tag defines independent, self-contained content.</p>
+                <p><strong>Example:</strong> &lt;article&gt;&lt;h2&gt;Article Title&lt;/h2&gt;...&lt;/article&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;aside&gt; - Aside Tag</h2>
+                <p>The <strong>&lt;aside&gt;</strong> tag defines content aside from the main content (like a sidebar).</p>
+                <p><strong>Example:</strong> &lt;aside&gt;Related links...&lt;/aside&gt;</p>
+            </div>
+
+            <!-- CATEGORY 10: MEDIA & GRAPHICS -->
+            <div class="category-header">
+                <h2>10. Media & Graphics</h2>
+                <p>Tags for embedding multimedia and creating graphics</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;video&gt; - Video Tag</h2>
+                <p>The <strong>&lt;video&gt;</strong> tag embeds video content in a webpage.</p>
+                <p><strong>Example:</strong> &lt;video src="video.mp4" controls&gt;&lt;/video&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;audio&gt; - Audio Tag</h2>
+                <p>The <strong>&lt;audio&gt;</strong> tag embeds audio content in a webpage.</p>
+                <p><strong>Example:</strong> &lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;iframe&gt; - Inline Frame</h2>
+                <p>The <strong>&lt;iframe&gt;</strong> tag embeds another HTML page within the current page.</p>
+                <p><strong>Example:</strong> &lt;iframe src="page.html"&gt;&lt;/iframe&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;canvas&gt; - Canvas Tag</h2>
+                <p>The <strong>&lt;canvas&gt;</strong> tag is used to draw graphics via JavaScript.</p>
+                <p><strong>Example:</strong> &lt;canvas id="myCanvas"&gt;&lt;/canvas&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;svg&gt; - SVG Graphics</h2>
+                <p>The <strong>&lt;svg&gt;</strong> tag defines Scalable Vector Graphics.</p>
+                <p><strong>Example:</strong> &lt;svg&gt;&lt;circle cx="50" cy="50" r="40"/&gt;&lt;/svg&gt;</p>
+            </div>
+
+            <!-- CATEGORY 11: MODERN INTERACTIVE ELEMENTS -->
+            <div class="category-header">
+                <h2>11. Modern Interactive Elements</h2>
+                <p>Contemporary HTML5 tags for interactive and enhanced user experiences</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;details&gt; / &lt;summary&gt; - Collapsible Content</h2>
+                <p>The <strong>&lt;details&gt;</strong> tag creates a disclosure widget that can be toggled open/closed. <strong>&lt;summary&gt;</strong> provides the visible heading.</p>
+                <p><strong>Example:</strong> &lt;details&gt;&lt;summary&gt;Click to expand&lt;/summary&gt;Hidden content&lt;/details&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <details style="background: #f0f0f0; padding: 10px; border-left: 3px solid #007bff; margin-top: 5px;">
+                    <summary style="cursor: pointer; font-weight: bold;">Click to expand</summary>
+                    <p style="margin-top: 10px;">This content is hidden until you click the summary!</p>
+                </details>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;dialog&gt; - Dialog Box</h2>
+                <p>The <strong>&lt;dialog&gt;</strong> tag represents a dialog box or modal window.</p>
+                <p><strong>Example:</strong> &lt;dialog id="myDialog"&gt;This is a dialog&lt;/dialog&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <button onclick="document.getElementById('demoDialog').showModal()" style="background: #007bff; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; margin-bottom: 10px;">Open Dialog</button>
+                <dialog id="demoDialog" style="border: 2px solid #007bff; border-radius: 8px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <p style="margin: 0 0 15px 0;">This is a dialog box!</p>
+                    <button onclick="document.getElementById('demoDialog').close()" style="background: #dc3545; color: white; padding: 6px 12px; border: none; border-radius: 4px; cursor: pointer;">Close</button>
+                </dialog>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;mark&gt; - Highlighted Text</h2>
+                <p>The <strong>&lt;mark&gt;</strong> tag highlights or marks text for reference or notation purposes.</p>
+                <p><strong>Example:</strong> &lt;mark&gt;highlighted text&lt;/mark&gt;</p>
+                <p><strong>Live Example:</strong> This is <mark>highlighted text</mark> in a sentence.</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;progress&gt; - Progress Bar</h2>
+                <p>The <strong>&lt;progress&gt;</strong> tag represents the progress of a task.</p>
+                <p><strong>Example:</strong> &lt;progress value="70" max="100"&gt;&lt;/progress&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <progress value="70" max="100" style="width: 100%; height: 25px;"></progress>
+                <p style="margin-top: 5px; font-size: 0.9em;">70% complete</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;meter&gt; - Gauge/Meter</h2>
+                <p>The <strong>&lt;meter&gt;</strong> tag represents a scalar measurement within a known range (like a gauge).</p>
+                <p><strong>Example:</strong> &lt;meter value="6" min="0" max="10"&gt;&lt;/meter&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <meter value="6" min="0" max="10" style="width: 100%; height: 25px;"></meter>
+                <p style="margin-top: 5px; font-size: 0.9em;">6 out of 10</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;time&gt; - Time/Date</h2>
+                <p>The <strong>&lt;time&gt;</strong> tag represents a specific time or date in a machine-readable format.</p>
+                <p><strong>Example:</strong> &lt;time datetime="2026-01-03"&gt;January 3, 2026&lt;/time&gt;</p>
+                <p><strong>Live Example:</strong> The event is on <time datetime="2026-01-03" style="font-weight: bold; color: #007bff;">January 3, 2026</time>.</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;datalist&gt; - Autocomplete Options</h2>
+                <p>The <strong>&lt;datalist&gt;</strong> tag provides a list of predefined options for an input element (autocomplete).</p>
+                <p><strong>Example:</strong> &lt;input list="browsers"&gt;&lt;datalist id="browsers"&gt;...&lt;/datalist&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <input list="browsers" placeholder="Type a browser name..." style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; width: 90%;">
+                <datalist id="browsers">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                    <option value="Safari">
+                    <option value="Edge">
+                    <option value="Opera">
+                </datalist>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;figure&gt; / &lt;figcaption&gt; - Figure with Caption</h2>
+                <p>The <strong>&lt;figure&gt;</strong> tag groups media content with a caption defined by <strong>&lt;figcaption&gt;</strong>.</p>
+                <p><strong>Example:</strong> &lt;figure&gt;&lt;img src="photo.jpg"&gt;&lt;figcaption&gt;Caption&lt;/figcaption&gt;&lt;/figure&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <figure style="border: 1px solid #ddd; padding: 10px; margin: 10px 0; text-align: center;">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='80'%3E%3Crect fill='%23667eea' width='120' height='80'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Arial'%3EPhoto%3C/text%3E%3C/svg%3E" alt="Sample photo" style="max-width: 100%;">
+                    <figcaption style="margin-top: 8px; font-style: italic; color: #555;">Figure 1: A sample photo caption</figcaption>
+                </figure>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;output&gt; - Output Element</h2>
+                <p>The <strong>&lt;output&gt;</strong> tag represents the result of a calculation or user action.</p>
+                <p><strong>Example:</strong> &lt;output&gt;Result: 42&lt;/output&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <output style="background: #e3f2fd; padding: 8px 12px; border-radius: 4px; border: 1px solid #007bff; display: inline-block;">Result: 42</output>
+            </div>
+
+            <!-- CATEGORY 12: SCRIPTING & ADVANCED -->
+            <div class="category-header">
+                <h2>12. Scripting & Advanced</h2>
+                <p>Advanced tags for code, styling, and dynamic content</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;script&gt; - Script Tag</h2>
+                <p>The <strong>&lt;script&gt;</strong> tag embeds or references JavaScript code.</p>
+                <p><strong>Example:</strong> &lt;script src="script.js"&gt;&lt;/script&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;style&gt; - Style Tag</h2>
+                <p>The <strong>&lt;style&gt;</strong> tag defines CSS styles for a document.</p>
+                <p><strong>Example:</strong> &lt;style&gt;body { color: blue; }&lt;/style&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;code&gt; - Code Text</h2>
+                <p>The <strong>&lt;code&gt;</strong> tag defines a piece of computer code.</p>
+                <p><strong>Example:</strong> &lt;code&gt;console.log()&lt;/code&gt;</p>
+                <p><strong>Live Example:</strong> Use <code style="background: #f4f4f4; padding: 2px 6px; border-radius: 3px; font-family: monospace;">console.log()</code> to print output.</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;pre&gt; - Preformatted Text</h2>
+                <p>The <strong>&lt;pre&gt;</strong> tag defines preformatted text (preserves spaces and line breaks).</p>
+                <p><strong>Example:</strong> &lt;pre&gt;Formatted text&lt;/pre&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <pre style="background: #f4f4f4; padding: 10px; border-radius: 4px; overflow-x: auto;">Line 1
+  Indented Line 2
+    More indented Line 3</pre>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;blockquote&gt; - Block Quote</h2>
+                <p>The <strong>&lt;blockquote&gt;</strong> tag defines a section quoted from another source.</p>
+                <p><strong>Example:</strong> &lt;blockquote&gt;Quote here&lt;/blockquote&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <blockquote style="border-left: 4px solid #007bff; padding-left: 15px; margin: 10px 0; font-style: italic; color: #555;">
+                    "This is a quotation from another source."
+                </blockquote>
             </div>
         </section>
     </div>
