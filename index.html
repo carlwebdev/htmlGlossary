@@ -158,6 +158,17 @@
             </div>
 
             <div class="glossary-item">
+                <h2>&lt;hgroup&gt; - Heading Group</h2>
+                <p>The <strong>&lt;hgroup&gt;</strong> tag groups a heading with subheadings or secondary content. Previously deprecated, it has been reinstated in HTML Living Standard.</p>
+                <p><strong>Example:</strong> &lt;hgroup&gt;&lt;h1&gt;Title&lt;/h1&gt;&lt;p&gt;Subtitle&lt;/p&gt;&lt;/hgroup&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <hgroup style="background: #f0f0f0; padding: 10px; border-left: 3px solid #007bff;">
+                    <h2 style="margin: 0; font-size: 1.3rem;">Main Article Title</h2>
+                    <p style="margin: 5px 0 0 0; color: #666; font-size: 0.9rem;">A descriptive subtitle or tagline</p>
+                </hgroup>
+            </div>
+
+            <div class="glossary-item">
                 <h2>&lt;p&gt; - Paragraph Tag</h2>
                 <p>The <strong>&lt;p&gt;</strong> tag defines a paragraph of text.</p>
                 <p><strong>Example:</strong> &lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
@@ -181,10 +192,10 @@
                 <div style="background: #f0f0f0; padding: 10px;"><hr></div>
             </div>
 
-            <!-- CATEGORY 3: TEXT FORMATTING -->
+            <!-- CATEGORY 3: TEXT FORMATTING & SEMANTICS -->
             <div class="category-header">
-                <h2>3. Text Formatting</h2>
-                <p>Tags for styling and emphasizing text content</p>
+                <h2>3. Text Formatting & Semantics</h2>
+                <p>Tags for styling, emphasizing, and giving meaning to text content</p>
             </div>
 
             <div class="glossary-item">
@@ -222,10 +233,89 @@
                 <p><strong>Live Example:</strong> This is <u>Underlined text</u> in a sentence.</p>
             </div>
 
-            <!-- CATEGORY 4: LINKS & IMAGES -->
+            <div class="glossary-item">
+                <h2>&lt;mark&gt; - Highlighted Text</h2>
+                <p>The <strong>&lt;mark&gt;</strong> tag highlights or marks text for reference or notation purposes.</p>
+                <p><strong>Example:</strong> &lt;mark&gt;highlighted text&lt;/mark&gt;</p>
+                <p><strong>Live Example:</strong> This is <mark>highlighted text</mark> in a sentence.</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;small&gt; - Small Text</h2>
+                <p>The <strong>&lt;small&gt;</strong> tag represents side comments or small print (like copyright or legal text).</p>
+                <p><strong>Example:</strong> &lt;small&gt;Copyright 2026&lt;/small&gt;</p>
+                <p><strong>Live Example:</strong> <small style="color: #666;">Copyright © 2026. All rights reserved.</small></p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;sub&gt; / &lt;sup&gt; - Subscript & Superscript</h2>
+                <p>The <strong>&lt;sub&gt;</strong> tag creates subscript text, while <strong>&lt;sup&gt;</strong> creates superscript text.</p>
+                <p><strong>Example:</strong> H&lt;sub&gt;2&lt;/sub&gt;O or x&lt;sup&gt;2&lt;/sup&gt;</p>
+                <p><strong>Live Example:</strong> H<sub>2</sub>O (water) and E=mc<sup>2</sup> (Einstein's equation)</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;code&gt; - Code Text</h2>
+                <p>The <strong>&lt;code&gt;</strong> tag defines a piece of computer code.</p>
+                <p><strong>Example:</strong> &lt;code&gt;console.log()&lt;/code&gt;</p>
+                <p><strong>Live Example:</strong> Use <code style="background: #f4f4f4; padding: 2px 6px; border-radius: 3px; font-family: monospace;">console.log()</code> to print output.</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;kbd&gt; - Keyboard Input</h2>
+                <p>The <strong>&lt;kbd&gt;</strong> tag represents keyboard input or user input from other sources.</p>
+                <p><strong>Example:</strong> Press &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt;</p>
+                <p><strong>Live Example:</strong> Press <kbd style="background: #f4f4f4; border: 1px solid #ccc; border-radius: 3px; padding: 2px 6px; font-family: monospace; box-shadow: 0 2px 0 #ccc;">Ctrl</kbd> + <kbd style="background: #f4f4f4; border: 1px solid #ccc; border-radius: 3px; padding: 2px 6px; font-family: monospace; box-shadow: 0 2px 0 #ccc;">C</kbd> to copy.</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;abbr&gt; - Abbreviation</h2>
+                <p>The <strong>&lt;abbr&gt;</strong> tag defines an abbreviation or acronym, with an optional title for the full description.</p>
+                <p><strong>Example:</strong> &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</p>
+                <p><strong>Live Example:</strong> <abbr title="HyperText Markup Language" style="border-bottom: 1px dotted #007bff; cursor: help; text-decoration: none;">HTML</abbr> (hover to see full text)</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;time&gt; - Time/Date</h2>
+                <p>The <strong>&lt;time&gt;</strong> tag represents a specific time or date in a machine-readable format.</p>
+                <p><strong>Example:</strong> &lt;time datetime="2026-01-03"&gt;January 3, 2026&lt;/time&gt;</p>
+                <p><strong>Live Example:</strong> The event is on <time datetime="2026-01-03" style="font-weight: bold; color: #007bff;">January 3, 2026</time>.</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;wbr&gt; - Word Break Opportunity</h2>
+                <p>The <strong>&lt;wbr&gt;</strong> tag suggests where text can break if needed (for long words or URLs).</p>
+                <p><strong>Example:</strong> verylongword&lt;wbr&gt;continuation</p>
+                <p><strong>Live Example:</strong></p>
+                <div style="width: 150px; background: #f0f0f0; padding: 8px; border: 1px solid #ddd;">
+                    supercalifragilistic<wbr>expialidocious
+                </div>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;pre&gt; - Preformatted Text</h2>
+                <p>The <strong>&lt;pre&gt;</strong> tag defines preformatted text (preserves spaces and line breaks).</p>
+                <p><strong>Example:</strong> &lt;pre&gt;Formatted text&lt;/pre&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <pre style="background: #f4f4f4; padding: 10px; border-radius: 4px; overflow-x: auto;">Line 1
+  Indented Line 2
+    More indented Line 3</pre>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;blockquote&gt; - Block Quote</h2>
+                <p>The <strong>&lt;blockquote&gt;</strong> tag defines a section quoted from another source.</p>
+                <p><strong>Example:</strong> &lt;blockquote&gt;Quote here&lt;/blockquote&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <blockquote style="border-left: 4px solid #007bff; padding-left: 15px; margin: 10px 0; font-style: italic; color: #555;">
+                    "This is a quotation from another source."
+                </blockquote>
+            </div>
+
+            <!-- CATEGORY 4: LINKS & MEDIA -->
             <div class="category-header">
-                <h2>4. Links & Images</h2>
-                <p>Tags for creating hyperlinks and embedding images</p>
+                <h2>4. Links & Media</h2>
+                <p>Tags for hyperlinks, images, video, audio, and embedded content</p>
             </div>
 
             <div class="glossary-item">
@@ -241,6 +331,47 @@
                 <p><strong>Example:</strong> &lt;img src="image.jpg" alt="Image description"&gt;</p>
                 <p><strong>Live Example:</strong></p>
                 <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='80'%3E%3Crect fill='%23007bff' width='100' height='80'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Arial'%3ESample%3C/text%3E%3C/svg%3E" alt="Sample image" style="border: 2px solid #ddd; border-radius: 4px;">
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;picture&gt; / &lt;source&gt; - Responsive Images</h2>
+                <p>The <strong>&lt;picture&gt;</strong> tag contains multiple <strong>&lt;source&gt;</strong> elements for responsive images that adapt to different screen sizes.</p>
+                <p><strong>Example:</strong> &lt;picture&gt;&lt;source media="(min-width: 800px)" srcset="large.jpg"&gt;&lt;img src="small.jpg"&gt;&lt;/picture&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <picture>
+                    <source media="(min-width: 800px)" srcset="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='80'%3E%3Crect fill='%2328a745' width='150' height='80'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Arial' font-size='12'%3ELarge Screen%3C/text%3E%3C/svg%3E">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='80'%3E%3Crect fill='%23007bff' width='100' height='80'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Arial' font-size='10'%3ESmall Screen%3C/text%3E%3C/svg%3E" alt="Responsive image" style="border: 2px solid #ddd; border-radius: 4px;">
+                </picture>
+                <p style="margin-top: 5px; font-size: 0.85em; color: #666;">Resize your browser to see the image change!</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;figure&gt; / &lt;figcaption&gt; - Figure with Caption</h2>
+                <p>The <strong>&lt;figure&gt;</strong> tag groups media content with a caption defined by <strong>&lt;figcaption&gt;</strong>.</p>
+                <p><strong>Example:</strong> &lt;figure&gt;&lt;img src="photo.jpg"&gt;&lt;figcaption&gt;Caption&lt;/figcaption&gt;&lt;/figure&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <figure style="border: 1px solid #ddd; padding: 10px; margin: 10px 0; text-align: center;">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='80'%3E%3Crect fill='%23667eea' width='120' height='80'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Arial'%3EPhoto%3C/text%3E%3C/svg%3E" alt="Sample photo" style="max-width: 100%;">
+                    <figcaption style="margin-top: 8px; font-style: italic; color: #555;">Figure 1: A sample photo caption</figcaption>
+                </figure>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;video&gt; - Video Tag</h2>
+                <p>The <strong>&lt;video&gt;</strong> tag embeds video content in a webpage.</p>
+                <p><strong>Example:</strong> &lt;video src="video.mp4" controls&gt;&lt;/video&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;audio&gt; - Audio Tag</h2>
+                <p>The <strong>&lt;audio&gt;</strong> tag embeds audio content in a webpage.</p>
+                <p><strong>Example:</strong> &lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;iframe&gt; - Inline Frame</h2>
+                <p>The <strong>&lt;iframe&gt;</strong> tag embeds another HTML page within the current page.</p>
+                <p><strong>Example:</strong> &lt;iframe src="page.html"&gt;&lt;/iframe&gt;</p>
             </div>
 
             <!-- CATEGORY 5: LISTS -->
@@ -279,10 +410,10 @@
                 <p><strong>Example:</strong> &lt;li&gt;List item&lt;/li&gt;</p>
             </div>
 
-            <!-- CATEGORY 6: CONTAINERS -->
+            <!-- CATEGORY 6: PAGE STRUCTURE & LAYOUT -->
             <div class="category-header">
-                <h2>6. Containers</h2>
-                <p>Generic container tags for grouping and styling content</p>
+                <h2>6. Page Structure & Layout</h2>
+                <p>Semantic HTML5 tags for organizing page layout and content structure</p>
             </div>
 
             <div class="glossary-item">
@@ -295,6 +426,60 @@
                 <h2>&lt;span&gt; - Inline Container</h2>
                 <p>The <strong>&lt;span&gt;</strong> tag is an inline container used to style or manipulate a specific part of text.</p>
                 <p><strong>Example:</strong> &lt;span style="color:red"&gt;Red text&lt;/span&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;header&gt; - Header Section</h2>
+                <p>The <strong>&lt;header&gt;</strong> tag defines a header section for a document or section.</p>
+                <p><strong>Example:</strong> &lt;header&gt;&lt;h1&gt;Site Title&lt;/h1&gt;&lt;/header&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;footer&gt; - Footer Section</h2>
+                <p>The <strong>&lt;footer&gt;</strong> tag defines a footer section for a document or section.</p>
+                <p><strong>Example:</strong> &lt;footer&gt;&copy; 2026&lt;/footer&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;nav&gt; - Navigation Section</h2>
+                <p>The <strong>&lt;nav&gt;</strong> tag defines a section of navigation links.</p>
+                <p><strong>Example:</strong> &lt;nav&gt;&lt;a href="/home"&gt;Home&lt;/a&gt;&lt;/nav&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;main&gt; - Main Content</h2>
+                <p>The <strong>&lt;main&gt;</strong> tag specifies the main content of a document.</p>
+                <p><strong>Example:</strong> &lt;main&gt;Main content here&lt;/main&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;section&gt; - Section Tag</h2>
+                <p>The <strong>&lt;section&gt;</strong> tag defines a thematic grouping of content.</p>
+                <p><strong>Example:</strong> &lt;section&gt;&lt;h2&gt;About&lt;/h2&gt;...&lt;/section&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;article&gt; - Article Tag</h2>
+                <p>The <strong>&lt;article&gt;</strong> tag defines independent, self-contained content.</p>
+                <p><strong>Example:</strong> &lt;article&gt;&lt;h2&gt;Article Title&lt;/h2&gt;...&lt;/article&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;aside&gt; - Aside Tag</h2>
+                <p>The <strong>&lt;aside&gt;</strong> tag defines content aside from the main content (like a sidebar).</p>
+                <p><strong>Example:</strong> &lt;aside&gt;Related links...&lt;/aside&gt;</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;menu&gt; - Menu/Toolbar</h2>
+                <p>The <strong>&lt;menu&gt;</strong> tag represents a toolbar or menu of commands. It can contain list items or other menu content.</p>
+                <p><strong>Example:</strong> &lt;menu&gt;&lt;li&gt;&lt;button&gt;Copy&lt;/button&gt;&lt;/li&gt;&lt;li&gt;&lt;button&gt;Paste&lt;/button&gt;&lt;/li&gt;&lt;/menu&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <menu style="list-style: none; padding: 10px; margin: 5px 0; background: #f0f0f0; border-left: 3px solid #007bff; display: flex; gap: 10px;">
+                    <li><button style="padding: 6px 12px; border: 1px solid #007bff; background: white; border-radius: 4px; cursor: pointer;">Copy</button></li>
+                    <li><button style="padding: 6px 12px; border: 1px solid #007bff; background: white; border-radius: 4px; cursor: pointer;">Paste</button></li>
+                    <li><button style="padding: 6px 12px; border: 1px solid #007bff; background: white; border-radius: 4px; cursor: pointer;">Delete</button></li>
+                </menu>
             </div>
 
             <!-- CATEGORY 7: TABLES -->
@@ -356,10 +541,123 @@
 
             <div class="glossary-item">
                 <h2>&lt;input&gt; - Input Field</h2>
-                <p>The <strong>&lt;input&gt;</strong> tag defines an input field where users can enter data.</p>
+                <p>The <strong>&lt;input&gt;</strong> tag defines an input field where users can enter data. It has many types and can be easily styled with CSS.</p>
                 <p><strong>Example:</strong> &lt;input type="text" name="username"&gt;</p>
-                <p><strong>Live Example:</strong></p>
-                <input type="text" placeholder="Enter username" style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; width: 90%;">
+                <p><strong>Common Input Types:</strong></p>
+                <div style="background: #f9f9f9; padding: 15px; border-radius: 4px; margin-top: 10px;">
+                    <style>
+                        .input-demo {
+                            margin: 8px 0;
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                        }
+                        .input-demo label {
+                            min-width: 100px;
+                            font-weight: bold;
+                            font-size: 0.9em;
+                        }
+                        .input-demo input {
+                            padding: 8px;
+                            border: 2px solid #ddd;
+                            border-radius: 4px;
+                            flex: 1;
+                            transition: all 0.3s;
+                        }
+                        .input-demo input:focus {
+                            outline: none;
+                            border-color: #007bff;
+                            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+                        }
+                        .input-demo input:hover {
+                            border-color: #999;
+                        }
+                    </style>
+                    
+                    <div class="input-demo">
+                        <label>text:</label>
+                        <input type="text" placeholder="Enter text">
+                    </div>
+                    
+                    <div class="input-demo">
+                        <label>email:</label>
+                        <input type="email" placeholder="user@example.com">
+                    </div>
+                    
+                    <div class="input-demo">
+                        <label>password:</label>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    
+                    <div class="input-demo">
+                        <label>number:</label>
+                        <input type="number" placeholder="42" min="0" max="100">
+                    </div>
+                    
+                    <div class="input-demo">
+                        <label>tel:</label>
+                        <input type="tel" placeholder="(555) 123-4567">
+                    </div>
+                    
+                    <div class="input-demo">
+                        <label>url:</label>
+                        <input type="url" placeholder="https://example.com">
+                    </div>
+                    
+                    <div class="input-demo">
+                        <label>search:</label>
+                        <input type="search" placeholder="Search...">
+                    </div>
+                    
+                    <div class="input-demo">
+                        <label>date:</label>
+                        <input type="date">
+                    </div>
+                    
+                    <div class="input-demo">
+                        <label>time:</label>
+                        <input type="time">
+                    </div>
+                    
+                    <div class="input-demo">
+                        <label>datetime-local:</label>
+                        <input type="datetime-local">
+                    </div>
+                    
+                    <div class="input-demo">
+                        <label>color:</label>
+                        <input type="color" value="#007bff">
+                    </div>
+                    
+                    <div class="input-demo">
+                        <label>range:</label>
+                        <input type="range" min="0" max="100" value="50" style="flex: 1;">
+                    </div>
+                    
+                    <div class="input-demo">
+                        <label>file:</label>
+                        <input type="file">
+                    </div>
+                    
+                    <div class="input-demo">
+                        <label>checkbox:</label>
+                        <input type="checkbox" style="width: auto;">
+                        <span style="font-size: 0.9em;">I agree to terms</span>
+                    </div>
+                    
+                    <div class="input-demo">
+                        <label>radio:</label>
+                        <div style="display: flex; gap: 15px; flex: 1;">
+                            <label style="min-width: auto; font-weight: normal; display: flex; align-items: center; gap: 5px;">
+                                <input type="radio" name="option" style="width: auto;"> Option 1
+                            </label>
+                            <label style="min-width: auto; font-weight: normal; display: flex; align-items: center; gap: 5px;">
+                                <input type="radio" name="option" style="width: auto;"> Option 2
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <p style="margin-top: 10px;"><strong>CSS Tip:</strong> Use <code style="background: #f4f4f4; padding: 2px 6px; border-radius: 3px;">:focus</code>, <code style="background: #f4f4f4; padding: 2px 6px; border-radius: 3px;">:hover</code>, and <code style="background: #f4f4f4; padding: 2px 6px; border-radius: 3px;">transition</code> for smooth interactions!</p>
             </div>
 
             <div class="glossary-item">
@@ -402,7 +700,30 @@
                 <textarea rows="3" placeholder="Enter multiple lines of text..." style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; width: 90%; resize: vertical;"></textarea>
             </div>
 
-            <!-- CATEGORY 9: SEMANTIC HTML5 -->
+            <div class="glossary-item">
+                <h2>&lt;datalist&gt; - Autocomplete Options</h2>
+                <p>The <strong>&lt;datalist&gt;</strong> tag provides a list of predefined options for an input element (autocomplete).</p>
+                <p><strong>Example:</strong> &lt;input list="browsers"&gt;&lt;datalist id="browsers"&gt;...&lt;/datalist&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <input list="browsers" placeholder="Type a browser name..." style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; width: 90%;">
+                <datalist id="browsers">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                    <option value="Safari">
+                    <option value="Edge">
+                    <option value="Opera">
+                </datalist>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;output&gt; - Output Element</h2>
+                <p>The <strong>&lt;output&gt;</strong> tag represents the result of a calculation or user action.</p>
+                <p><strong>Example:</strong> &lt;output&gt;Result: 42&lt;/output&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <output style="background: #e3f2fd; padding: 8px 12px; border-radius: 4px; border: 1px solid #007bff; display: inline-block;">Result: 42</output>
+            </div>
+
+            <!-- CATEGORY 9: INTERACTIVE ELEMENTS -->
             <div class="category-header">
                 <h2>9. Semantic HTML5</h2>
                 <p>Modern HTML5 tags that provide meaning to document structure</p>
@@ -450,43 +771,7 @@
                 <p><strong>Example:</strong> &lt;aside&gt;Related links...&lt;/aside&gt;</p>
             </div>
 
-            <!-- CATEGORY 10: MEDIA & GRAPHICS -->
-            <div class="category-header">
-                <h2>10. Media & Graphics</h2>
-                <p>Tags for embedding multimedia and creating graphics</p>
-            </div>
-
-            <div class="glossary-item">
-                <h2>&lt;video&gt; - Video Tag</h2>
-                <p>The <strong>&lt;video&gt;</strong> tag embeds video content in a webpage.</p>
-                <p><strong>Example:</strong> &lt;video src="video.mp4" controls&gt;&lt;/video&gt;</p>
-            </div>
-
-            <div class="glossary-item">
-                <h2>&lt;audio&gt; - Audio Tag</h2>
-                <p>The <strong>&lt;audio&gt;</strong> tag embeds audio content in a webpage.</p>
-                <p><strong>Example:</strong> &lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;</p>
-            </div>
-
-            <div class="glossary-item">
-                <h2>&lt;iframe&gt; - Inline Frame</h2>
-                <p>The <strong>&lt;iframe&gt;</strong> tag embeds another HTML page within the current page.</p>
-                <p><strong>Example:</strong> &lt;iframe src="page.html"&gt;&lt;/iframe&gt;</p>
-            </div>
-
-            <div class="glossary-item">
-                <h2>&lt;canvas&gt; - Canvas Tag</h2>
-                <p>The <strong>&lt;canvas&gt;</strong> tag is used to draw graphics via JavaScript.</p>
-                <p><strong>Example:</strong> &lt;canvas id="myCanvas"&gt;&lt;/canvas&gt;</p>
-            </div>
-
-            <div class="glossary-item">
-                <h2>&lt;svg&gt; - SVG Graphics</h2>
-                <p>The <strong>&lt;svg&gt;</strong> tag defines Scalable Vector Graphics.</p>
-                <p><strong>Example:</strong> &lt;svg&gt;&lt;circle cx="50" cy="50" r="40"/&gt;&lt;/svg&gt;</p>
-            </div>
-
-            <!-- CATEGORY 11: MODERN INTERACTIVE ELEMENTS -->
+            <!-- CATEGORY 9: INTERACTIVE ELEMENTS -->
             <div class="category-header">
                 <h2>11. Modern Interactive Elements</h2>
                 <p>Contemporary HTML5 tags for interactive and enhanced user experiences</p>
@@ -500,6 +785,25 @@
                 <details style="background: #f0f0f0; padding: 10px; border-left: 3px solid #007bff; margin-top: 5px;">
                     <summary style="cursor: pointer; font-weight: bold;">Click to expand</summary>
                     <p style="margin-top: 10px;">This content is hidden until you click the summary!</p>
+                </details>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;details&gt; with name - Accordion Group</h2>
+                <p>Multiple <strong>&lt;details&gt;</strong> elements with the same <strong>name</strong> attribute behave like radio buttons - only one can be open at a time.</p>
+                <p><strong>Example:</strong> &lt;details name="accordion"&gt;&lt;summary&gt;Section 1&lt;/summary&gt;...&lt;/details&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <details name="demo-accordion" style="background: #f0f0f0; padding: 10px; border-left: 3px solid #007bff; margin-top: 5px;">
+                    <summary style="cursor: pointer; font-weight: bold;">Section 1</summary>
+                    <p style="margin-top: 10px;">Content for section 1. Try opening another section!</p>
+                </details>
+                <details name="demo-accordion" style="background: #f0f0f0; padding: 10px; border-left: 3px solid #007bff; margin-top: 5px;">
+                    <summary style="cursor: pointer; font-weight: bold;">Section 2</summary>
+                    <p style="margin-top: 10px;">Content for section 2. Opening this closes Section 1.</p>
+                </details>
+                <details name="demo-accordion" style="background: #f0f0f0; padding: 10px; border-left: 3px solid #007bff; margin-top: 5px;">
+                    <summary style="cursor: pointer; font-weight: bold;">Section 3</summary>
+                    <p style="margin-top: 10px;">Content for section 3. This is an accordion pattern!</p>
                 </details>
             </div>
 
@@ -581,10 +885,66 @@
                 <output style="background: #e3f2fd; padding: 8px 12px; border-radius: 4px; border: 1px solid #007bff; display: inline-block;">Result: 42</output>
             </div>
 
-            <!-- CATEGORY 12: SCRIPTING & ADVANCED -->
+            <div class="glossary-item">
+                <h2>&lt;picture&gt; / &lt;source&gt; - Responsive Images</h2>
+                <p>The <strong>&lt;picture&gt;</strong> tag contains multiple <strong>&lt;source&gt;</strong> elements for responsive images that adapt to different screen sizes.</p>
+                <p><strong>Example:</strong> &lt;picture&gt;&lt;source media="(min-width: 800px)" srcset="large.jpg"&gt;&lt;img src="small.jpg"&gt;&lt;/picture&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <picture>
+                    <source media="(min-width: 800px)" srcset="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='80'%3E%3Crect fill='%2328a745' width='150' height='80'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Arial' font-size='12'%3ELarge Screen%3C/text%3E%3C/svg%3E">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='80'%3E%3Crect fill='%23007bff' width='100' height='80'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Arial' font-size='10'%3ESmall Screen%3C/text%3E%3C/svg%3E" alt="Responsive image" style="border: 2px solid #ddd; border-radius: 4px;">
+                </picture>
+                <p style="margin-top: 5px; font-size: 0.85em; color: #666;">Resize your browser to see the image change!</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;template&gt; - Template Element</h2>
+                <p>The <strong>&lt;template&gt;</strong> tag holds HTML content that is not rendered when the page loads but can be cloned and inserted via JavaScript.</p>
+                <p><strong>Example:</strong> &lt;template id="myTemplate"&gt;&lt;p&gt;Template content&lt;/p&gt;&lt;/template&gt;</p>
+                <p><strong>Visual Note:</strong> Templates are invisible by default and used for JavaScript templating.</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;kbd&gt; - Keyboard Input</h2>
+                <p>The <strong>&lt;kbd&gt;</strong> tag represents keyboard input or user input from other sources.</p>
+                <p><strong>Example:</strong> Press &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt;</p>
+                <p><strong>Live Example:</strong> Press <kbd style="background: #f4f4f4; border: 1px solid #ccc; border-radius: 3px; padding: 2px 6px; font-family: monospace; box-shadow: 0 2px 0 #ccc;">Ctrl</kbd> + <kbd style="background: #f4f4f4; border: 1px solid #ccc; border-radius: 3px; padding: 2px 6px; font-family: monospace; box-shadow: 0 2px 0 #ccc;">C</kbd> to copy.</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;abbr&gt; - Abbreviation</h2>
+                <p>The <strong>&lt;abbr&gt;</strong> tag defines an abbreviation or acronym, with an optional title for the full description.</p>
+                <p><strong>Example:</strong> &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</p>
+                <p><strong>Live Example:</strong> <abbr title="HyperText Markup Language" style="border-bottom: 1px dotted #007bff; cursor: help; text-decoration: none;">HTML</abbr> (hover to see full text)</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;wbr&gt; - Word Break Opportunity</h2>
+                <p>The <strong>&lt;wbr&gt;</strong> tag suggests where text can break if needed (for long words or URLs).</p>
+                <p><strong>Example:</strong> verylongword&lt;wbr&gt;continuation</p>
+                <p><strong>Live Example:</strong></p>
+                <div style="width: 150px; background: #f0f0f0; padding: 8px; border: 1px solid #ddd;">
+                    supercalifragilistic<wbr>expialidocious
+                </div>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;sub&gt; / &lt;sup&gt; - Subscript & Superscript</h2>
+                <p>The <strong>&lt;sub&gt;</strong> tag creates subscript text, while <strong>&lt;sup&gt;</strong> creates superscript text.</p>
+                <p><strong>Example:</strong> H&lt;sub&gt;2&lt;/sub&gt;O or x&lt;sup&gt;2&lt;/sup&gt;</p>
+                <p><strong>Live Example:</strong> H<sub>2</sub>O (water) and E=mc<sup>2</sup> (Einstein's equation)</p>
+            </div>
+
+            <div class="glossary-item">
+                <h2>&lt;small&gt; - Small Text</h2>
+                <p>The <strong>&lt;small&gt;</strong> tag represents side comments or small print (like copyright or legal text).</p>
+                <p><strong>Example:</strong> &lt;small&gt;Copyright 2026&lt;/small&gt;</p>
+                <p><strong>Live Example:</strong> <small style="color: #666;">Copyright © 2026. All rights reserved.</small></p>
+            </div>
+
             <div class="category-header">
-                <h2>12. Scripting & Advanced</h2>
-                <p>Advanced tags for code, styling, and dynamic content</p>
+                <h2>10. Scripting & Graphics</h2>
+                <p>Tags for JavaScript, CSS, dynamic content, and graphics rendering</p>
             </div>
 
             <div class="glossary-item">
@@ -600,30 +960,47 @@
             </div>
 
             <div class="glossary-item">
-                <h2>&lt;code&gt; - Code Text</h2>
-                <p>The <strong>&lt;code&gt;</strong> tag defines a piece of computer code.</p>
-                <p><strong>Example:</strong> &lt;code&gt;console.log()&lt;/code&gt;</p>
-                <p><strong>Live Example:</strong> Use <code style="background: #f4f4f4; padding: 2px 6px; border-radius: 3px; font-family: monospace;">console.log()</code> to print output.</p>
+                <h2>&lt;template&gt; - Template Element</h2>
+                <p>The <strong>&lt;template&gt;</strong> tag holds HTML content that is not rendered when the page loads but can be cloned and inserted via JavaScript.</p>
+                <p><strong>Example:</strong> &lt;template id="myTemplate"&gt;&lt;div&gt;Template content&lt;/div&gt;&lt;/template&gt;</p>
+                <p><strong>Live Example:</strong></p>
+                <template id="demoTemplate">
+                    <div style="background: #e3f2fd; padding: 10px; border-left: 3px solid #007bff; margin-top: 5px;">
+                        <strong>Cloned Template Content</strong>
+                        <p>This was hidden in a template tag!</p>
+                    </div>
+                </template>
+                <button onclick="var t = document.getElementById('demoTemplate'); var clone = t.content.cloneNode(true); this.parentNode.appendChild(clone); this.disabled=true; this.textContent='Template Cloned!';" style="background: #28a745; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; margin-top: 5px;">Clone Template with JavaScript</button>
             </div>
 
             <div class="glossary-item">
-                <h2>&lt;pre&gt; - Preformatted Text</h2>
-                <p>The <strong>&lt;pre&gt;</strong> tag defines preformatted text (preserves spaces and line breaks).</p>
-                <p><strong>Example:</strong> &lt;pre&gt;Formatted text&lt;/pre&gt;</p>
+                <h2>&lt;canvas&gt; - Canvas Tag</h2>
+                <p>The <strong>&lt;canvas&gt;</strong> tag is used to draw graphics via JavaScript.</p>
+                <p><strong>Example:</strong> &lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;</p>
                 <p><strong>Live Example:</strong></p>
-                <pre style="background: #f4f4f4; padding: 10px; border-radius: 4px; overflow-x: auto;">Line 1
-  Indented Line 2
-    More indented Line 3</pre>
+                <canvas id="demoCanvas" width="200" height="100" style="border: 2px solid #007bff; border-radius: 4px;"></canvas>
+                <script>
+                    var c = document.getElementById('demoCanvas');
+                    if (c && c.getContext) {
+                        var ctx = c.getContext('2d');
+                        ctx.fillStyle = '#667eea';
+                        ctx.fillRect(20, 20, 160, 60);
+                        ctx.fillStyle = 'white';
+                        ctx.font = '20px Arial';
+                        ctx.fillText('Canvas!', 60, 55);
+                    }
+                </script>
             </div>
 
             <div class="glossary-item">
-                <h2>&lt;blockquote&gt; - Block Quote</h2>
-                <p>The <strong>&lt;blockquote&gt;</strong> tag defines a section quoted from another source.</p>
-                <p><strong>Example:</strong> &lt;blockquote&gt;Quote here&lt;/blockquote&gt;</p>
+                <h2>&lt;svg&gt; - SVG Graphics</h2>
+                <p>The <strong>&lt;svg&gt;</strong> tag defines Scalable Vector Graphics.</p>
+                <p><strong>Example:</strong> &lt;svg width="100" height="100"&gt;&lt;circle cx="50" cy="50" r="40" fill="blue"/&gt;&lt;/svg&gt;</p>
                 <p><strong>Live Example:</strong></p>
-                <blockquote style="border-left: 4px solid #007bff; padding-left: 15px; margin: 10px 0; font-style: italic; color: #555;">
-                    "This is a quotation from another source."
-                </blockquote>
+                <svg width="120" height="120" style="border: 2px solid #ddd; border-radius: 4px;">
+                    <circle cx="60" cy="60" r="40" fill="#007bff"/>
+                    <text x="60" y="65" text-anchor="middle" fill="white" font-family="Arial" font-size="16">SVG</text>
+                </svg>
             </div>
         </section>
     </div>
